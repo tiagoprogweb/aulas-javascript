@@ -40,7 +40,12 @@ console.log(carro.modelo);
 console.log(`Carros da ${carro.marca} tem a cor ${carro.cor}`);
 console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
 
+/* Exercícios
+1) Crie um novo objeto contendo informações de algo que você gosta
+(filme, livro, comida, jogo etc)
 
+2) Mostre uma mensagem com pelo menos 2 propriedades do objeto
+que você criou. */
 
 
 
