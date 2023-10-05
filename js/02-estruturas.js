@@ -23,3 +23,33 @@ const dados = ["Fulano", "Silva", 25, "11-2135-0300", "São Paulo"];
 da pessoa. Exemplo: "Fulano tem 25 anos." */
 console.log(dados);
 console.log(`${dados[0]} tem ${dados[2]} anos.`);
+
+console.log("----------");
+
+// Objeto
+let carro = {
+    marca: "Fiat",
+    modelo: "Uno com escada",
+    portas: 2,
+    cor: "branco",
+    opcionais: ["Ar condicionado", "Vidros elétricos", "Alarme"]
+};
+
+console.log(carro);
+console.log(carro.modelo);
+console.log(`Carros da ${carro.marca} tem a cor ${carro.cor}`);
+console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
