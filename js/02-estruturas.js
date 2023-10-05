@@ -16,7 +16,10 @@ console.log(cursos[2]); // SQL
 
 /* Exercícios
 1) Crie uma constante chamada "dados" e coloque nela
-os dados de uma pessoa: nome, sobrenome, idade, telefone e cidade 
+os dados de uma pessoa: nome, sobrenome, idade, telefone e cidade */
+const dados = ["Fulano", "Silva", 25, "11-2135-0300", "São Paulo"];
 
-2) Mostre no console uma mensagem contendo somente o nome e a idade
+/* 2) Mostre no console uma mensagem contendo somente o nome e a idade
 da pessoa. Exemplo: "Fulano tem 25 anos." */
+console.log(dados);
+console.log(`${dados[0]} tem ${dados[2]} anos.`);
