@@ -71,6 +71,38 @@ console.log(`Nome: ${pessoa.nome}`);
 console.log(`Celular: ${pessoa.telefones[1]}`);
 console.log(`Peso: ${pessoa.medidas.peso} kg `);
 
+// Array de objetos
+let alunos = [
+    {
+        nome: "Naruto",
+        idade: 10
+    },
+    {
+        nome: "Guts",
+        idade: 30
+    },
+    {
+        nome: "Dohko",
+        idade: 120
+    }
+];
+
+console.log( alunos[1].nome ); // Guts
+console.log( alunos[0].nome ); // Naruto
+console.log(
+`O cavaleiro de ouro originalmente era o ${alunos[2].nome} de Libra que tem ${alunos[2].idade} anos`);
+
+
+// Array como matriz
+let tecnologias = [
+    ["HTML5", "CSS3", "JavaScript"],
+    ["PHP", "SQL", "APIs", "Node", "Python"],
+    ["Figma", "Photoshop"]
+];
+
+console.log(tecnologias[1][3]); // Node
+console.log(tecnologias[2][1]); // Photoshop
+console.log(tecnologias[0][0]); // HTML5
 
 
 
