@@ -11,18 +11,28 @@ let idade = prompt("Quantos anos você tem?");
 let mensagem; // indefinida/undefined
 
 // Verificar a idade e determinar se é menor ou maior
-if( idade >= 18 ){
-    mensagem = "maior";
+// if( idade >= 18 ){
+//     mensagem = "maior";
+// } else {
+//     mensagem = "menor";
+// }
+
+// Apresentando os resultados APÓS a condicional
+// console.log(`${usuario} é ${mensagem} de idade!`);
+// alert(`${usuario} é ${mensagem} de idade!`);
+
+// Condicional ENCADEADA/SUCESSIVA
+if( idade >= 60 ){
+    mensagem = "idoso(a)";
+} else if( idade >= 18 ){
+    mensagem = "adulto(a)";
 } else {
     mensagem = "menor";
 }
 
-// Apresentando os resultados APÓS a condicional
-console.log(`${usuario} é ${mensagem} de idade!`);
-alert(`${usuario} é ${mensagem} de idade!`);
+console.log(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
 
-
-
+alert(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
 
 
 
