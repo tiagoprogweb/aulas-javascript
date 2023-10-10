@@ -12,7 +12,7 @@
 
 4. Crie uma variável chamada "Média" que receberá o valor CALCULADO da média matemática das duas notas informadas. 
 
-    *Dica: você deve SOMAR as duas notas e DEPOIS dividir por 2.*
+    *Dica: você deve SOMAR as duas notas e DEPOIS dividir por 2. Exemplo: (nota1 + nota2) / 2*
 
 5. Programe uma condicional que verifique o valor da média calculada conforme a seguinte lógica:
 
