@@ -42,10 +42,17 @@ console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
 
 /* Exercícios
 1) Crie um novo objeto contendo informações de algo que você gosta
-(filme, livro, comida, jogo etc)
+(filme, livro, comida, jogo etc) */
+let livro = {
+    titulo: "O Senhor dos Anéis",
+    autor: "J.R.R. Tolkien",
+    volumes: 3,
+    genero: "Aventura"
+};
 
-2) Mostre uma mensagem com pelo menos 2 propriedades do objeto
+/* 2) Mostre uma mensagem com pelo menos 2 propriedades do objeto
 que você criou. */
+console.log(`O universo ${livro.titulo} foi criado por ${livro.autor}`);
 
 
 
