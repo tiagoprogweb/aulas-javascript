@@ -17,10 +17,18 @@ let resultado;
 //     resultado = "reprovado";
 // }
 
-if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
-    resultado = "aprovado";
-} else if(faltas > limiteDeFaltas){
+// if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+//     resultado = "aprovado";
+// } else if(faltas > limiteDeFaltas){
+//     resultado = "reprovado por faltas";
+// } else {
+//     resultado = "reprovado";
+// }
+
+if( faltas > limiteDeFaltas ){
     resultado = "reprovado por faltas";
+} else if( mediaFinal >= mediaMinima ){
+    resultado = "aprovado";
 } else {
     resultado = "reprovado";
 }
@@ -29,3 +37,14 @@ if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
 console.log(`O aluno ${aluno} está ${resultado}`);
 console.log(`Média do aluno: ${mediaFinal}`);
 console.log(`Faltas do aluno: ${faltas}`);
+
+console.log("----------------");
+
+/* Operador lógico || (OR - OU) */
+let diaDaSemana = "sábado";
+
+if(diaDaSemana == "sábado" || diaDaSemana == "domingo") {
+    console.log("Final de semana :)");
+} else {
+    console.log("Vá trabalhar...");
+}
