@@ -31,9 +31,24 @@ while( contador <= 5 ){
 de repetição são chamadas de i, j ou k. */
 
 // EXEMPLO FOR (PARA)
-for( let i = 1; i <= 10; i++ ){
-    console.log(`i vale ${i}`);
+// for( let i = 1; i <= 10; i++ ){
+//     console.log(`i vale ${i}`);
+// }
+
+
+/* Loop com array */
+let clientes = [
+    "Ozzy", 
+    "Dio", 
+    "Gillan", 
+    "Martin", 
+    "Hughes"
+];
+
+for( let i = 0; i < 5; i++ ){
+    console.log(`Cliente: ${clientes[i]}`);
 }
+
 
 
 
