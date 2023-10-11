@@ -29,3 +29,13 @@ while( contador <= 5 ){
 
 /* Obs.: normalmente variáveis de controle
 de repetição são chamadas de i, j ou k. */
+
+// EXEMPLO FOR (PARA)
+for( let i = 1; i <= 10; i++ ){
+    console.log(`i vale ${i}`);
+}
+
+
+
+
+
