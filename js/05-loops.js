@@ -37,15 +37,12 @@ de repetição são chamadas de i, j ou k. */
 
 
 /* Loop com array */
-let clientes = [
-    "Ozzy", 
-    "Dio", 
-    "Gillan", 
-    "Martin", 
-    "Hughes"
-];
+let clientes = ["Ozzy", "Dio", "Gillan",     "Martin", "Hughes", "Fulano", "Beltrano"];
 
-for( let i = 0; i < 5; i++ ){
+// "Cache/Memória" da quantidade de elementos do array
+let quantidade = clientes.length;
+
+for( let i = 0; i < quantidade; i++ ){
     console.log(`Cliente: ${clientes[i]}`);
 }
 
