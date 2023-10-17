@@ -68,7 +68,7 @@ console.log(`Desconto: ${desconto.toLocaleString("pt-br", {
     currency: "BRL"
 })}`);
 
-console.log(`Preço final: ${precoFinal.toLocaleString("en", {
+console.log(`Preço final: ${precoFinal.toLocaleString("pt-br", {
     style: "currency",
     currency: "BRL"
 })}`);
