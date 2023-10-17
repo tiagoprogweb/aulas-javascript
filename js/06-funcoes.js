@@ -56,6 +56,21 @@ let preco = 5500;
 let desconto = preco * 0.10; // 10%
 let precoFinal = preco - desconto;
 
-console.log(`Preço: ${preco.toLocaleString()}`);
-console.log(`Desconto: ${desconto.toLocaleString()}`);
-console.log(`Preço final: ${precoFinal.toLocaleString()}`);
+console.log(
+    `Preço: ${preco.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+    })}`
+);
+
+console.log(`Desconto: ${desconto.toLocaleString("pt-br", {
+    style: "currency",
+    currency: "BRL"
+})}`);
+
+console.log(`Preço final: ${precoFinal.toLocaleString("en", {
+    style: "currency",
+    currency: "BRL"
+})}`);
+
+preco.toLocaleString()
