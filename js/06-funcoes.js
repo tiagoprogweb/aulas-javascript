@@ -57,10 +57,12 @@ let desconto = preco * 0.10; // 10%
 let precoFinal = preco - desconto;
 
 function formatarPreco(valor){
-    return valor.toLocaleString("pt-br", {
+    let opcoes = {
         style: "currency",
         currency: "BRL"
-    })
+    };
+
+    return valor.toLocaleString("pt-br", opcoes);
 }
 
 console.log(`Preço: ${formatarPreco(preco)}`);
