@@ -37,7 +37,7 @@ de repetição são chamadas de i, j ou k. */
 
 
 /* Loop com array */
-let clientes = ["Ozzy", "Dio", "Gillan",     "Martin", "Hughes", "Fulano", "Beltrano"];
+let clientes = ["Ozzy", "Dio", "Gillan", "Martin", "Hughes", "Fulano", "Beltrano"];
 
 // "Cache/Memória" da quantidade de elementos do array
 let quantidade = clientes.length;
@@ -47,6 +47,35 @@ for( let i = 0; i < quantidade; i++ ){
 }
 
 
+console.log("---------");
+
+// for/of -> para arrays
+let bandas = ["Slayer", "Dream Theater", "Nightwish"];
+
+for(let banda of bandas){
+    console.log(banda);
+}
+
+// for/in -> para objetos
+let livro = {
+    titulo: "HTML5",
+    autor: "Maujor",
+    site: "http://maujor.com",
+    ano: 2016,
+    editora: "Novatec",
+    edicao: 3
+};
+
+// para PROPRIEDADE dentro/em LIVRO
+for(let propriedade in livro){
+    // Acessar APENAS a propriedade
+    // console.log(propriedade);
+
+    // Acessar VALOR de cada propriedade
+    // console.log(livro[propriedade]);
+
+    console.log(`${propriedade} -> ${livro[propriedade]}`);
+}
 
 
 
