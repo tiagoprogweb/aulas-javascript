@@ -14,6 +14,17 @@ function converteMoeda( valor, cotacao ){
 let valorConvertido = converteMoeda(valorDaCotacaoDoDia, valorEmDolares);
 
 // Saídas após o processamento
-console.log(valorEmDolares); // quanto que era em dólares
-console.log(valorConvertido); // quanto que fica em reais
+//console.log(valorEmDolares); // quanto que era em dólares
+//console.log(valorConvertido); // quanto que fica em reais
 
+console.log( formatarMoeda(valorEmDolares, "en", "USD") );
+console.log( formatarMoeda(valorConvertido, "pt-br", "BRL") );
+
+function formatarMoeda(valor, local, moeda){
+    let opcoes = {
+        style: "currency",
+        currency: moeda
+    };
+
+    return valor.toLocaleString(local, opcoes);
+}
