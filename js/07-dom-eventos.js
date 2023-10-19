@@ -75,11 +75,10 @@ botao.addEventListener("click", gerenciarModoNoturno);
 
 function gerenciarModoNoturno(){
     pagina.classList.toggle("modo-noturno");
-
-    /* Exercício faça aqui mesmo neste lugar exatamente aqui */
     
-    /* Se a página estiver com a classe chamada "modo-noturno",
-    então mude o texto do botão para "Desativar".
-    Caso contrário, faça o botão exibir o texto "Ativar" */
-
+    if( pagina.classList.contains("modo-noturno") ){
+        botao.textContent = "Desativar";
+    } else {
+        botao.textContent = "Ativar";
+    }
 }
